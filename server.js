@@ -47,6 +47,16 @@ app.get('/about', (req, res) => {
     });
 });
 
+
+var syst = JSON.stringify(process.env, undefined, 2);
+app.get('/sys', (req, res) => {
+    res.render('system.hbs', {
+    pageTitle: 'System Page',
+    sys_name: syst
+});
+});
+
+
 app.listen(port, () => {
     console.log('server is up at port: ' + port);
 });
