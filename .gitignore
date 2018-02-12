@@ -36,6 +36,10 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Added by Todor Lubenov at 20180212T1030
+.idea/
+yarn.lock
+
 # Typescript v1 declaration files
 typings/
 
